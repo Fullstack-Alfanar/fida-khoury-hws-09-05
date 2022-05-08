@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>universtiy</title>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+
+<body>
+    <div>
+        <h1> Welcome to the course details</h1>
+    </div>
+    <div class="inputDiv" id="inputDiv">
+        <form>
+            <div class="textField" id="textField">
+                <span><label>Student Name:</label></span>
+                <input type="text" class="sName" id="sName" placeholder="student name" required>
+                <span><label>Grade:</label></span>
+                <input type="number" class="Grade" id="Grade" placeholder="0-100" required>
+            </div>
+            <div class="Button" id="Button">
+                <input type="button" class="addInfo" id="addInfo" value="Add information" onclick="addStudent()">
+            </div>
+        </form>
+    </div>
+    <hr style="height: 10px; background-color: blueviolet;color: blueviolet; border: 10px;">
+    <div class="outputDiv" id="outputDiv">
+        <div>
+            <table border="1" id="table">
+                <tr>
+                    <td>No.</td>
+                    <td>Student name</td>
+                    <td>Grade</td>
+                    <td>Time</td>
+                    <td>Picture</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <hr style="height: 10px; background-color: blueviolet;color: blueviolet; border: 10px;">
+        <div class="cards">
+
+            <div class="squre">
+
+                <div class="content">
+                    <div class="divHeadline"><label class="headline">For calculating the average hover here </label>
+                    </div>
+                    <div class="hiddenInfo">
+                        <div> <label class="avg" id="avg"></label></div>
+                        <div><input type="button" class="calcAvg" id="calcAvg" value="calculate average" onclick="calcAvg()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="squre2">
+
+                <div class="content2">
+                    <div class="divHeadline2"><label class="headline">For calculating the sum hover here </label></div>
+                    <div class="hiddenInfo2">
+                        <div> <label class="sum" id="sum"></label></div>
+                        <div><input type="button" class="showSum" id="Showsum" value="calculate average" onclick="showSum()"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
