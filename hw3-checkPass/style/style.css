@@ -2,8 +2,8 @@
     margin: auto;
     margin-top: 50px;
     padding: 10px;
-    width:700px;
-    height:500px;
+    width:550px;
+    height:350px;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
@@ -15,19 +15,18 @@
 }
 label,h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-size: larger;
     color: darkslategrey;
 }
 div{  
     margin: auto;
-    padding: 10px;
 }
 .UserName,.Pass{
-    width: 500px;
+    width: 400px;
     height: 30px;
 }
 .subButton{
-    width: 500px;
+    width: 250px;
     height: 30px;
     background-color: chocolate;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
