@@ -17,6 +17,7 @@ function checkUser() {
                     {
                         if(checkEnglish(password.value, password.value.length) == true)
                         {
+                            saveUser();
                             console.log("123");
                     }else console.log("it must english characters .");
                 }else console.log("it must contain atleast 3 numbers in row .");
@@ -46,7 +47,8 @@ function checkLow(str, size) {
 }
 function checkSpecialChar(str,size){
     if ((size - 1) == -1) return false;
-    if(str.match(format)) return true;
+    str[size-1].match(format);
+    if(str[size-1].match(format)) return true;
     else return checkSpecialChar(str,size-1);
     
 }
@@ -57,12 +59,11 @@ function threeNums(str,size){
     
 }
 function checkEnglish(str,size){
-    if ((size - 1) == -1) return false;
+    if ((size - 1) == -1) return true;
     //console.log(str[size-1].match(english));
-    if(str[size-1].match(english) ) return true;
-    
-    else return checkEnglish(str,size-1);
+    if(str[size-1].match(english) || str[size-1].match(format))  return checkEnglish(str,size-1);    
+    else return false;
     
 }
 var temp="aaaa"
-console.log(checkSpecialChar("Aa132!",8));
+console.log(checkEnglish("1234ي!",6));
