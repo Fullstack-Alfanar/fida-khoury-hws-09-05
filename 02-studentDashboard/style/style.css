@@ -1,0 +1,105 @@
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 700px;
+    color: blueviolet;
+}
+
+.inputDiv {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.sName,
+.Grade {
+    margin: 1.5%;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.addInfo {
+    border: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    background-color: grey;
+    margin: 15px;
+    padding: 5px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: blueviolet;
+}
+
+.squre,
+.squre2 {
+    padding: 15px;
+    align-content: center;
+    text-align: center;
+    width: 100px;
+    height: 105px;
+    background-color: darkorchid;
+    margin-left: 20%;
+    transition: width 2s, height 2s;
+
+}
+
+.headline,
+.avg,
+.sum {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+    font-size: medium;
+    margin: 10px;
+
+}
+
+.squre:hover {
+    width: 200px;
+    height: 210px;
+
+}
+
+.squre2:hover {
+    width: 200px;
+    height: 210px;
+
+}
+
+.hiddenInfo {
+    display: none;
+    margin: 10px;
+
+}
+
+.hiddenInfo2 {
+    display: none;
+    margin: 10px;
+
+}
+
+.calcAvg,
+.showSum {
+    margin: 10px;
+}
+
+.content2:hover .hiddenInfo2 {
+    display: block;
+
+}
+
+.content:hover .hiddenInfo {
+    display: block;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
