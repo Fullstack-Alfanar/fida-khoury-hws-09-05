@@ -1,0 +1,35 @@
+.MainDiv{
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    width:550px;
+    height:350px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.headline{
+    text-align: center;
+}
+label,h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: darkslategrey;
+}
+div{  
+    margin: auto;
+}
+.UserName,.Pass{
+    width: 400px;
+    height: 30px;
+}
+.subButton{
+    width: 250px;
+    height: 30px;
+    background-color: chocolate;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+
+}
